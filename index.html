@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title> <!--berfungsi sebagai judul halaman web -->
+    <link rel="stylesheet" href="style/style.css"> <!--berfungsi menghubungkan stylesheet ke HTML-->
+</head>
+<body>
+    <div class="overlay"></div> <!--berfungsi sebagai class overlay-->
+    <form class="box"> <!--berfungsi sebagai form pengisian data-->
+        <div class="header"> <!--berfungsi sebagai class header ke css-->
+            <P>W E L C O M E</P> <!--paragraf pembuka-->
+        </div>
+        <div class="login-area"> <!--berfungsi sebagi class login-area ke css-->
+            <h1>LOGIN</h1> <!--judul utama-->
+            <input type="text" class="username" placeholder="Username">
+            <input type="password" class="password" placeholder="Password">
+            <button onclick="myfunction()" class="submit">Login</button> <!--berfungsi membuat tombol button yang nantinya akan menampilkan box alert-->
+        <div class="tanggal"> <!--berfungsi menampilkan waktu dan tanggal saat ini dengan menggunakan id yang akan terhubung ke javascript-->
+            <p id="waktu"></p>
+        </div>
+        </div>
+    </form>
+<!--berfungsi sebagai memanggil box alert-->
+    <script>
+        function myfunction(){
+            alert("HELLO WORLD!!!")
+        }
+    </script>
+    <script src="/script/main.js"></script> <!--berfungsi untuk menghubungkan file javascript-->
+</body>
+</html>

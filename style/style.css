@@ -1,0 +1,92 @@
+/*fungsi untuk mengatur tampilan dari seluruh halaman (elemen <body>)*/
+body{
+    padding: 0;
+    margin: 0;
+    background-image: url(/assets/1.jpeg);
+    background-size: cover;
+}
+
+/*fungsi untuk mengatur tampilan elemen dengan class "box"*/
+.box{
+    position: absolute;
+    width: 400px;
+    background-color: gray;
+    top: 35%;
+    left: 35%;
+    transform: translate(-3%,-30%);
+    border-radius: 15px;
+    box-shadow: 0 10px 10px 10px rgba(0, 0, 0, .2);
+}
+
+/*fungsi untuk mengatur tampilan elemen dengan class "header"*/
+.header{
+    background-image:url(/assets/2.jpeg) ;
+    background-size: cover;
+    padding: 50px 30px;
+    color: rgba(255, 255, 255, 0.53);
+    border-radius: 15px 15px 0 0;
+}
+
+/*fungsi untuk mengatur gaya elemen <p> yang berada di dalam elemen dengan class "header"*/
+.header p{
+    font-size: x-large;
+    text-align: center;
+}
+
+/*fungsi untuk mengatur tampilan area login dengan class "login-area"*/
+.login-area{
+    text-align: center;
+    padding: 50px 50px 30px 50px;
+}
+
+/*fungsi mengatur gaya elemen input username dan password*/
+.username,
+.password{
+    width: 100%;
+    text-align: center;
+    padding: 13px 0;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    color: white;
+    background-color: hsla(260, 3%, 36%, 0.502);
+    margin-bottom:15px;
+    transition: .5s;
+}
+
+/*fungsi mengatur gaya placeholder didalam elemen input*/
+.username::placeholder,
+.password::placeholder{
+    color: white;
+}
+
+/*fungsi untuk mengubah warna latar belakang elemen input dengan class "username" dan "password" ketika dalam keadaan fokus*/
+.username:focus,
+.password:focus{
+    background-color: hsla(39, 100%, 60%, 0.702);
+}
+
+/*fungsi untuk mengatur gaya tombol dengan class "submit"*/
+.submit{
+    width: 150px;
+    padding: 10px;
+    background-color: hsla(260, 3%, 36%, 0.502);
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    outline: none;
+    margin: 10px;
+    transition: .2s;
+    cursor: pointer;
+}
+
+/*fungsi untuk mengatur gaya tombol dengan class "submit" saat digerakkan (hovered)*/
+.submit:hover{
+    background-color: hsla(39, 100%, 60%, 0.702);
+}
+
+/*fungsu mengatur ukuran font*/
+.tanggal{
+    font-size: x-small;
+}
